@@ -73,18 +73,18 @@ Baseline score for example, if you had a set of true and false questions, 60% of
 So in my case if you look at the chart below,
 <img src="{{ site.url }}{{ site.baseurl }}/images/finance/article-distribution.png" alt="linearly separable data">
 
-Majority Class: **Home-Loans**
-Baseline Accuracy: **50%**
+Majority Class: **Home-Loans**<br/>
+Baseline Accuracy: **50%**<br/>
 Model Accuracy:    **92%**
 
 ### Confusion Matrix (Model Evaluation)
-Confusion matrix helps to see where the model went wrong.
-Along the vertical are the **actual labels**
+Confusion matrix helps to see where the model went wrong.<br/>
+Along the vertical are the **actual labels**<br/>
 Along the horizontal are the **model predicted labels**
 <img src="{{ site.url }}{{ site.baseurl }}/images/finance/confusion.png" alt="linearly separable data">
 
 The **diagonal** is where the model got the predictions right.
-If you look at the home-loans for example, 
+If you look at the home-loans for example,<br/>
 Out of the 415 home loan articles 9 were predicted as savings-accounts and 5 were predicted as bank-accounts.
 
 I was pretty satisfied at this stage with the performance of my model.
@@ -95,10 +95,12 @@ To see the model in action for my client, I built a web app using the flask,a mi
 **Snapshot of the app**
 <img src="{{ site.url }}{{ site.baseurl }}/images/finance/snap1.png" alt="linearly separable data">
 
-Just paste the link of the article in the text box. The article itself will come under *Article* and the prediction for the category will come in the green box.
+Just paste the link of the article in the text box. The article itself will come under *Article* and the prediction for the category will come in the red box.
 
 **Snapshot of the app after feeding it an article about real-estate**
 <img src="{{ site.url }}{{ site.baseurl }}/images/finance/snap2.png" alt="linearly separable data">
 
 ### References 
-[For the Flask app](https://www.youtube.com/watch?v=7tLBHkqMae8)
+[For the Flask app](https://www.youtube.com/watch?v=7tLBHkqMae8)<br/>
+[For this Blog site framework](https://github.com/mmistakes/minimal-mistakes)<br/>
+[NLP](https://medium.com/@actsusanli)<br/>
