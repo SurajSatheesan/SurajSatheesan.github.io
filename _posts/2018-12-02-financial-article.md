@@ -41,6 +41,13 @@ Using this dataset, I will build a classifier that will learn from this dataset 
 Since the data is text, I need to use Natural Language Processing (NLP). Simply put its a process that helps in conversion of text as we humans understand it into numerical representation that the machine learning model understands.
 <img src="{{ site.url }}{{ site.baseurl }}/images/finance/nlp.png" alt="linearly separable data">
 
+### Text Pre-processing/Cleaning
+The above will find some numerical representation for every word. However, this won’t be useful as some words will appear commonly in all the categories and don’t contribute to the classification. I removed such words. Other steps followed to clean up the text,
+* Removed contractions
+* Removed numbers
+* Removed junk words
+The steps above will vary from project to project. I would try and fit a model for each cleaning step to check for improvement in performance.
+
 ## H2 Heading
 
 ### H3 Heading
