@@ -101,7 +101,7 @@ Just paste the link of the article in the text box. The article itself will come
 <img src="{{ site.url }}{{ site.baseurl }}/images/finance/snap2.png" alt="linearly separable data">
 
 ### References 
-[Project Source Code](https://github.com/SurajSatheesan/financial_article/)<br/>
+[Project Source Code](https://github.com/SurajSatheesan/capstone-project)<br/>
 [For the Flask app](https://www.youtube.com/watch?v=7tLBHkqMae8)<br/>
 [For this Blog site framework](https://github.com/mmistakes/minimal-mistakes)<br/>
 [NLP](https://medium.com/@actsusanli)<br/>
