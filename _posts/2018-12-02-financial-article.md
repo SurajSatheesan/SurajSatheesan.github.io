@@ -15,6 +15,12 @@ My objective here was to develop a model that will be able to read an article to
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/finance/model-work.png" alt="linearly separable data">
 
+### Project Workflow
+
+<img src="{{ site.url }}{{ site.baseurl }}/images/finance/project-worflow.png" alt="linearly separable data">
+
+
+
 ## H2 Heading
 
 ### H3 Heading
