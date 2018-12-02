@@ -49,6 +49,10 @@ The above will find some numerical representation for every word. However, this 
 
 The steps above will vary from project to project. I would try and fit a model for each cleaning step to check for improvement in performance.
 
+### Exploring the Categories 
+After the cleaning I looked at the top word, two-word combo in each category. Below is two-word combo bar plot for 4 of the categories
+<img src="{{ site.url }}{{ site.baseurl }}/images/finance/words-bar.png" alt="linearly separable data">
+
 ## H2 Heading
 
 ### H3 Heading
