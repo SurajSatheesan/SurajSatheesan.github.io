@@ -1,7 +1,7 @@
 ---
 layout: posts
 permalink: /machine-learning/
-title: "Machine Learning Posts by Tags"
+title: "My Projects"
 author_profile: true
 header:
   image: "/images/mlimage1.png"
