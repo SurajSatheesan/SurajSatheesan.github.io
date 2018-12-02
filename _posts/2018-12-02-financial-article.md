@@ -46,6 +46,7 @@ The above will find some numerical representation for every word. However, this 
 * Removed contractions
 * Removed numbers
 * Removed junk words
+
 The steps above will vary from project to project. I would try and fit a model for each cleaning step to check for improvement in performance.
 
 ## H2 Heading
