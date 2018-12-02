@@ -19,6 +19,23 @@ My objective here was to develop a model that will be able to read an article to
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/finance/project-worflow.png" alt="linearly separable data">
 
+### The Dataset
+The client has been publishing their own financial articles which they have already labelled appropriately based on the context and collected. I was given access to this dataset via API. I wrote a code in python to pull all the labelled articles into my local system.
+There were 8 required categories:
+
+1.	Home-Loans
+2.	Personal-Loans
+3.	Car-Loans
+4.	Credit Cards
+5.	Superannuation
+6.	Savings Accounts
+7.	Term Deposits
+8.	Bank Accounts
+
+**Total articles: 2813**
+<img src="{{ site.url }}{{ site.baseurl }}/images/finance/article-distribution.png" alt="linearly separable data">
+
+Using this dataset I will build a classifier that will learn from this dataset and predict the category from external sources.
 
 
 ## H2 Heading
