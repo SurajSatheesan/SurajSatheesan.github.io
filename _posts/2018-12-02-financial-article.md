@@ -8,7 +8,12 @@ excerpt: "Natural Language Processing, Data Science"
 mathjax: "true"
 ---
 
-# H1 Heading
+### Introduction
+This was my first data science project working with a client. The client is a company that specialises in financial products comparison like home loans, credit cards, superannuation etc.  To spread awareness of the various products managed by them, they place the products on websites that show mostly articles like new, blogs etc.
+
+My objective here was to develop a model that will be able to read an article to automatically label which financial product was the closest to place near/next to a article.
+
+<img src="{{ site.url }}{{ site.baseurl }}/images/finance/model-work.png" alt="linearly separable data">
 
 ## H2 Heading
 
@@ -54,7 +59,7 @@ Here's an image:
 <img src="{{ site.url }}{{ site.baseurl }}/images/finance/house.png" alt="linearly separable data">
 
 Here's another image using Kramdown:
-![alt]({{ site.url }}{{ site.baseurl }}/imagesfinance/house.png)
+![alt]({{ site.url }}{{ site.baseurl }}/images/finance/house.png)
 
 Here's some math:
 
