@@ -35,8 +35,11 @@ There were 8 required categories:
 **Total articles: 2813**
 <img src="{{ site.url }}{{ site.baseurl }}/images/finance/article-distribution.png" alt="linearly separable data">
 
-Using this dataset I will build a classifier that will learn from this dataset and predict the category from external sources.
+Using this dataset, I will build a classifier that will learn from this dataset and predict the category on articles from external sources.
 
+### Natural Language Processing
+Since the data is text, I need to use Natural Language Processing (NLP). Simply put its a process that helps in conversion of text as we humans understand it into numerical representation that the machine learning model understands.
+<img src="{{ site.url }}{{ site.baseurl }}/images/finance/nlp.png" alt="linearly separable data">
 
 ## H2 Heading
 
