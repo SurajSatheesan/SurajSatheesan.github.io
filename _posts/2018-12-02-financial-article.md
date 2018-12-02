@@ -51,56 +51,54 @@ The steps above will vary from project to project. I would try and fit a model f
 
 ### Exploring the Categories 
 After the cleaning I looked at the top word, two-word combo in each category. Below is two-word combo bar plot for 4 of the categories
+
 <img src="{{ site.url }}{{ site.baseurl }}/images/finance/words-bar.png" alt="linearly separable data">
 
-## H2 Heading
+The distinction in words is good at this stage. I was quite satisfied with this and proceeded from here to build the model.
 
-### H3 Heading
+### Wordcloud
+Wordcloud is a more interesting way to visualize word representation for each category.
 
-Here's some basic text.
-
-And here's some *italics*
-
-Here's some **bold** text.
-
-What about a [link](https://github.com/)?
-
-Here's a bulleted list:
-* First item
-+ Second item
-- Third item
-
-Here's a numbered list:
-1. First
-2. Second
-3. Third
-
-Python code block:
-```python
-    import numpy as np
-
-    def test_function(x, y):
-      z = np.sum(x,y)
-      return z
-```
-
-R code block:
-```r
-library(tidyverse)
-df <- read_csv("some_file.csv")
-head(df)
-```
-
-Here's some inline code `x+y`.
-
-Here's an image:
+**HOME LOANS**
 <img src="{{ site.url }}{{ site.baseurl }}/images/finance/house.png" alt="linearly separable data">
 
-Here's another image using Kramdown:
-![alt]({{ site.url }}{{ site.baseurl }}/images/finance/house.png)
+**CAR LOANS**
+<img src="{{ site.url }}{{ site.baseurl }}/images/finance/car3.png" alt="linearly separable data">
 
-Here's some math:
+### Model Building
+After testing different types of classifier models and checking for accuracy, the best performing model Logistic Regression. The accuracy was compared to the *baseline*.
 
-$$z=x+y$$
+Baseline score for example, if you had a set of true and false questions, 60% of correct answers were true and you answered all true you'll get 60% right. Basically you didn't do any work you just chose the majority answer therefore you performed at baseline level.
 
-You can also put it inline $$z=x+y$$
+So in my case if you look at the chart below,
+<img src="{{ site.url }}{{ site.baseurl }}/images/finance/article-distribution.png" alt="linearly separable data">
+
+Majority Class: **Home-Loans**
+Baseline Accuracy: **50%**
+Model Accuracy:    **92%**
+
+### Confusion Matrix (Model Evaluation)
+Confusion matrix helps to see where the model went wrong.
+Along the vertical are the **actual labels**
+Along the horizontal are the **model predicted labels**
+<img src="{{ site.url }}{{ site.baseurl }}/images/finance/confusion.png" alt="linearly separable data">
+
+The **diagonal** is where the model got the predictions right.
+If you look at the home-loans for example, 
+Out of the 415 home loan articles 9 were predicted as savings-accounts and 5 were predicted as bank-accounts.
+
+I was pretty satisfied at this stage with the performance of my model.
+
+### Web-app
+To see the model in action for my client, I built a web app using the flask,a micro web framework written in Python. The classifier model will run in the background
+
+**Snapshot of the app**
+<img src="{{ site.url }}{{ site.baseurl }}/images/finance/snap1.png" alt="linearly separable data">
+
+Just paste the link of the article in the text box. The article itself will come under *Article* and the prediction for the category will come in the green box.
+
+**Snapshot of the app after feeding it an article about real-estate**
+<img src="{{ site.url }}{{ site.baseurl }}/images/finance/snap2.png" alt="linearly separable data">
+
+### References 
+[For the Flask app](https://www.youtube.com/watch?v=7tLBHkqMae8)
