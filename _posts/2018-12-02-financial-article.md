@@ -7,6 +7,7 @@ header:
 excerpt: "Natural Language Processing, Data Science"
 mathjax: "true"
 ---
+<img src="{{ site.url }}{{ site.baseurl }}/images/finance/the-app-g.gif" alt="linearly separable data">
 
 ### Introduction
 This was a data science project working with a client. The client is a company that specialises in financial products comparison like home loans, credit cards, superannuation etc.  To spread awareness of the various products managed by them, they place the products on websites that show mostly articles like news, blogs etc.
