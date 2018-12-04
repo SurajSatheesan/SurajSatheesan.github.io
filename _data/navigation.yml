@@ -1,7 +1,7 @@
 # main links
 main:
-  - title: "LinkedIn"
-    url: https://www.linkedin.com/in/suraj-satheesan/
+  #- title: "LinkedIn"
+  #  url: https://www.linkedin.com/in/suraj-satheesan/
   - title: "Projects"
     url: /machine-learning/
   # - title: "Sample Posts"

@@ -1,5 +1,5 @@
 ---
-title: "Finacial Article Categoriser"
+title: "Financial Article Categoriser"
 date: 2018-12-02
 tags: [machine learning, data science]
 header:
@@ -9,7 +9,7 @@ mathjax: "true"
 ---
 
 ### Introduction
-This was my first data science project working with a client. The client is a company that specialises in financial products comparison like home loans, credit cards, superannuation etc.  To spread awareness of the various products managed by them, they place the products on websites that show mostly articles like new, blogs etc.
+This was a data science project working with a client. The client is a company that specialises in financial products comparison like home loans, credit cards, superannuation etc.  To spread awareness of the various products managed by them, they place the products on websites that show mostly articles like news, blogs etc.
 
 My objective here was to develop a model that will be able to read an article to automatically label which financial product was the closest to place near/next to a article.
 
@@ -35,10 +35,10 @@ There were 8 required categories:
 **Total articles: 2813**
 <img src="{{ site.url }}{{ site.baseurl }}/images/finance/article-distribution.png" alt="linearly separable data">
 
-Using this dataset, I will build a classifier that will learn from this dataset and predict the category on articles from external sources.
+Using this dataset, I built a classifier that learnt from this dataset and predicted the category on new articles from external sources.
 
 ### Natural Language Processing
-Since the data is text, I need to use Natural Language Processing (NLP). Simply put its a process that helps in conversion of text as we humans understand it into numerical representation that the machine learning model understands.
+Since the data is text, I used Natural Language Processing (NLP). Simply put it's a process that helps in conversion of text as we humans understand it into numerical representation that the machine learning model understands.
 <img src="{{ site.url }}{{ site.baseurl }}/images/finance/nlp.png" alt="linearly separable data">
 
 ### Text Pre-processing/Cleaning
@@ -54,10 +54,10 @@ After the cleaning I looked at the top word, two-word combo in each category. Be
 
 <img src="{{ site.url }}{{ site.baseurl }}/images/finance/words-bar.png" alt="linearly separable data">
 
-The distinction in words is good at this stage. I was quite satisfied with this and proceeded from here to build the model.
+The distinction in words was good at this stage. I was quite satisfied with this and proceeded from here to build the model.
 
 ### Wordcloud
-Wordcloud is a more interesting way to visualize word representation for each category.
+Wordcloud is a more interesting way to visualise word representation for each category.
 
 **HOME LOANS**
 <img src="{{ site.url }}{{ site.baseurl }}/images/finance/house.png" alt="linearly separable data">
@@ -66,9 +66,9 @@ Wordcloud is a more interesting way to visualize word representation for each ca
 <img src="{{ site.url }}{{ site.baseurl }}/images/finance/car3.png" alt="linearly separable data">
 
 ### Model Building
-After testing different types of classifier models and checking for accuracy, the best performing model Logistic Regression. The accuracy was compared to the *baseline*.
+After testing different types of classifier models and checking for accuracy, the best performing model was Logistic Regression. The accuracy was compared to the *baseline score*.
 
-Baseline score for example, if you had a set of true and false questions, 60% of correct answers were true and you answered all true you'll get 60% right. Basically you didn't do any work you just chose the majority answer therefore you performed at baseline level.
+Baseline score: For example, if you had a set of true and false questions, 60% of correct answers were true and you answered all true you'll get 60% right. Basically you didn't do any work you just chose the majority answer therefore you performed at baseline level.
 
 So in my case if you look at the chart below,
 <img src="{{ site.url }}{{ site.baseurl }}/images/finance/article-distribution.png" alt="linearly separable data">
